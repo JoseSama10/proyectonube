@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const createApp = require('../backend/src/app');
+const createApp = require('./src/app');  // ← CORREGIDO
 
 const app = createApp();
 
@@ -38,3 +38,4 @@ process.on('SIGINT', () => {
     process.exit(0);
   });
 });
+
